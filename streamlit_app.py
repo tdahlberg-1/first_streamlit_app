@@ -31,10 +31,8 @@ streamlit.dataframe(fruityvice_normalized)
 
 import snowflake.connector
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-#= my_cnx.cursor()
 my_cur.execute("select * from pc_rivery_db.public.fruit_load_list") #remove if above is used
-#my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 my_data_row = my_cur.fetchone()
-streamlit.text("The Fruit List contains:")
+streamlit.text("The Fruit List Contains:")
 streamlit.text(my_data_row)
 ## second try
