@@ -37,3 +37,4 @@ my_cur.execute("select * from fruit_load_list") #remove if above is used
 my_data_row = my_cur.fetchone()
 streamlit.text("The Fruit List contains:")
 streamlit.text(my_data_row)
+## second try
