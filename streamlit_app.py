@@ -64,7 +64,7 @@ if streamlit.button('add fruit to the list'):
     
     
     #dont run anything past here while we troubleshoot
-streamlit.stop
+#streamlit.stop
 fruit_choice = streamlit.text_input('What fruit would you like to add?','jackfruit')
 
 
