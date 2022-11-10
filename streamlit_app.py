@@ -65,7 +65,7 @@ if streamlit.button('add fruit to the list'):
     
     #dont run anything past here while we troubleshoot
 #streamlit.stop
-fruit_choice = streamlit.text_input('What fruit would you like to add?','jackfruit')
+#fruit_choice = streamlit.text_input('What fruit would you like to add?','jackfruit')
 
 
-my_cur.execute ("insert into fruit_load_list values ('from streamlit')")
+#my_cur.execute ("insert into fruit_load_list values ('from streamlit')")
